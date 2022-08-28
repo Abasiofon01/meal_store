@@ -1,0 +1,705 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- home section starts -->
+
+    <section class="home h-screen" id="home">
+        <header class=" header flex items-center text-lg
+           justify-between p-5" id="header">
+            <div class="">
+                <a href="#">
+                    <h3 class="text-orange-500 text-2xl hover:scale-110 mb-5">Meal<span
+                            class="text-white text-3xl hover:scale-110">.</span></h3>
+                </a>
+                <!-- <img src=" /assets/logoo.png" class=" h-12 w-full object-fill hidden md:block" alt="" srcset=""> -->
+            </div>
+
+            <nav class="
+          flex flex-wrap
+          items-center
+          md:py-0
+        " id="nav">
+
+                <svg xmlns="http://www.w3.org/2000/svg" id="menu-button"
+                    class="h-6 w-6 text-white cursor-pointer md:hidden block" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+
+                <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+                    <ul class="
+              pt-4
+              uppercase text-base text-white
+              text-center
+              md:flex
+              md:justify-between 
+              md:pt-0">
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-orange-500 hover:scale-110 transition-all"
+                                href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-orange-500 hover:scale-110 transition-all"
+                                href="#features">Features</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-orange-500 hover:scale-110 transition-all"
+                                href="#menu_section">Menu</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-orange-500 hover:scale-110 transition-all"
+                                href="#categories">Categories</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-orange-500 hover:scale-110 transition-all"
+                                href="#review">Review</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:text-orange-500 hover:scale-110 transition-all"
+                                href="#blogs">Blogs</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="text-white  md:flex md:gap-5">
+                <i class="fa-solid fa-magnifying-glass hover:text-orange-500 hover:scale-110 transition-all"
+                    id="search-btn"></i>
+                <i class="fa-solid fa-cart-shopping hover:text-orange-500 hover:scale-110 transition-all"
+                    id="cart-btn"></i>
+                <i class="fa-solid fa-user hover:text-orange-500 hover:scale-110 transition-all" id="login-btn"></i>
+            </div>
+            <form action=""
+                class=" search-form hidden absolute top-24 right-8 w-4/5 h-12 bg-gray-300 rounded-lg flex items-center">
+                <input type="search" placeholder="search here..." name="" id=""
+                    class="h-full w-full  bg-none normal-case text-lg px-2 py-0 text-black">
+                <label for="search-box"
+                    class="fas fa-search text-2xl pr-2 text-black hover:scale-110 hover:text-orange-500 transition-all cursor-pointer"></label>
+            </form>
+
+            <div class="shopping-cart hidden absolute top-24 right-8 p-4 rounded-lg shadow w-96 bg-gray-300">
+                <div class=" box flex items-center relative my-4 mx-0 justify-around">
+                    <img src="/assets/afang.jpg" alt="" class="h-24 w-24 flex object-cover">
+                    <div class="content">
+                        <h3 class="text-black text-xl pb-4">Afang Soup</h3>
+                        <span class="price text-white text-lg">$2.53/-</span>
+                        <span class=" quantity pl-4 text-white text-lg">Qty: 1</span>
+                    </div>
+                    <div>
+                        <i
+                            class="fas fa-trash  transition-all hover:scale-110 cursor-pointer text-white text-2xl hover:text-red-500"></i>
+                    </div>
+                </div>
+                <div class="box flex items-center relative my-4 mx-0 justify-around">
+                    <img src="/assets/Egusi.webp" alt="" class="h-24 w-24 flex object-cover">
+                    <div class="content">
+                        <h3 class="text-black text-xl pb-4">Melon Soup</h3>
+                        <span class="price text-white text-lg">$2.53/-</span>
+                        <span class=" quantity pl-4 text-white text-lg">Qty: 1</span>
+                    </div>
+                    <div>
+                        <i
+                            class="fas fa-trash  transition-all hover:scale-110 cursor-pointer text-white text-2xl hover:text-red-500"></i>
+                    </div>
+                </div>
+                <div class="box flex items-center relative my-4 mx-0 justify-around">
+                    <img src="/assets/Jollof-Rice-with-Green-Onions.jpg" alt="" class="h-24 w-24 flex object-cover">
+                    <div class="content">
+                        <h3 class="text-black text-xl pb-4">Jollof Rice</h3>
+                        <span class="price text-white text-lg">$2.53/-</span>
+                        <span class=" quantity pl-4 text-white text-lg">Qty: 1</span>
+                    </div>
+                    <div>
+                        <i
+                            class="fas fa-trash  transition-all hover:scale-110 cursor-pointer text-white text-2xl hover:text-red-500"></i>
+                    </div>
+                </div>
+                <div class="total text-2xl text-center py-4 px-0 text-black">
+                    Total : $10.99/-
+                </div>
+                <a href=""
+                    class="btn mt-4 text-center block bg-none py-3 px-12 m-4 text-xl rounded-lg border border-black text-black cursor-pointer hover:bg-orange-500 hover:text-white hover:transition-all hover:border-transparent">
+                    Checkout</a>
+            </div>
+            <form class="login-form hidden absolute top-24 right-8 p-4 rounded-lg text-center shadow w-96 bg-gray-300">
+                <h3 class="text-3xl py-4 uppercase text-black">Login now</h3>
+                <div class="px-2 py-5">
+                    <input type="email" placeholder="Your Email"
+                        class=" w-full bg-white rounded-lg p-3 text-base text-black normal-case">
+                </div>
+                <div class="px-2 py-5">
+                    <input type="password" placeholder="Your Password"
+                        class=" w-full bg-white rounded-lg p-3 text-base text-black normal-case">
+                </div>
+                <p class="text-base py-4 px-0 text-white">Forgot your password <a class="underline text-orange-500"
+                        href="#">Click
+                        here</a></p>
+                <p class="text-base py-4 px-0 text-white">Don't have an account <a class="underline text-orange-500"
+                        href="#">Create
+                        now</a></p>
+                <div>
+                    <input type="submit" value="login now"
+                        class="btn mt-4 text-center inline-block py-3 mb-3 px-6 bg-none text-xl rounded-lg border border-black text-black cursor-pointer hover:bg-orange-500 hover:text-white hover:transition-all hover:border-transparent">
+                </div>
+            </form>
+        </header>
+
+        <div class="content flex flex-col items-center justify-center h-5/6 m-auto text-center w-7/12">
+            <h3 class="text-blue-100 text-3xl font-bold">Fresh and <span class="text-orange-500"> Organic </span> Meals
+                For
+                You</h3>
+            <p class="text-blue-100 text-xl leading-relaxed pt-4">Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Ratione,
+                perspiciatis.
+                Sequi adipisci iste
+                quibusdam? Ea?</p>
+            <a href="" class=" mt-4 text-center inline-block py-3 mb-3 px-6 bg-none text-xl rounded-lg border
+                border-white text-white cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all
+                hover:border-transparent hover:scale-110 ease-linear">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- end of home section -->
+
+    <!-- features section starts -->
+    <section class="feature w-4/5 mx-auto" id="features">
+        <h1 class="text-center text-3xl py-8 pb-12 text-black">
+            Our <span class=" polygon bg-orange-500 text-blue-100 inline-block py-2 px-5">Features</span>
+        </h1>
+        <div class="box-container mx-4">
+
+            <div class="box flex flex-col items-center py-5 px-8 bg-white shadow text-center hover:scale-105 hover:ease-in
+                hover:delay-200  hover:transition-all">
+                <img src="/assets/Goat-Meat-Pepper-Soup.jpg" alt="" class="h-48 w-48 rounded-full object-cover my-4">
+                <h3 class="text-black text-2xl leading-relaxed">Fresh and Organic</h3>
+                <p class="text-orange-500 leading-relaxed py-2 px-0">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                    Praesentium libero
+                    illum quo aliquid sit?
+                </p>
+                <a href=" #" class="mt-4 text-center inline-block py-3 mb-3 px-6 bg-none text-xl rounded-lg border
+                border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all
+                hover:border-transparent hover:scale-110 ease-linear">Read More</a>
+            </div>
+            <div
+                class="box flex flex-col items-center py-5 px-8 bg-white shadow text-center hover:scale-105 hover:ease-in hover:delay-200 hover:transition-all">
+                <img src="/assets/dlevery bike.jpg" alt="" class="h-48 w-48 rounded-full object-cover my-4">
+                <h3 class="text-black text-2xl leading-relaxed">Free Delivery</h3>
+                <p class="text-orange-500 leading-relaxed py-2 px-0">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                    Praesentium libero
+                    illum quo aliquid
+                    sit?
+                </p>
+                <a href=" #" class="mt-4 text-center inline-block py-3 mb-3 px-6 bg-none text-xl rounded-lg border
+                border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all
+                hover:border-transparent hover:scale-110 ease-linear">Read More</a>
+            </div>
+            <div
+                class="box flex flex-col items-center py-5 px-8 bg-white shadow text-center hover:scale-105 hover:ease-in hover:delay-200 hover:transition-all">
+                <img src="/assets/fast payment.png" alt="" class="h-48 w-48 rounded-full object-cover my-4">
+                <h3 class="text-black text-2xl leading-relaxed">Easy Payments</h3>
+                <p class="text-orange-500 leading-relaxed py-2 px-0">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                    Praesentium libero
+                    illum quo aliquid sit?
+                </p>
+                <a href=" #" class="mt-4 text-center inline-block py-3 mb-3 px-6 bg-none text-xl rounded-lg border
+                border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all
+                hover:border-transparent hover:scale-110 ease-linear">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!-- end of features section -->
+
+    <!-- menu section starts -->
+    <section class="menu w-4/5 mx-auto" id="menu_section">
+        <h1 class="text-center text-3xl py-8 pb-12 text-black">Our <span
+                class="polygon bg-orange-500 text-blue-100 inline-block py-2 px-5"> Menu</span></h1>
+
+        <div class="swiper menu-slider p-4">
+            <div class="swiper-wrapper">
+                <div
+                    class="swiper-slide box  items-center flex flex-col py-5 px-8 bg-white shadow text-center ease-linear transition-all">
+                    <img src="/assets/menu/akara.webp" alt="" class="h-48 w-48 rounded-full object-cover">
+                    <h3 class="text-2xl pt-5 text-black">Akara</h3>
+                    <div class="price py-2 text-lg text-gray-700">
+                        $2.55/- -7.99/-
+                    </div>
+                    <div class="stars py-2 text-orange-500 text-lg">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="mt-4 text-center inline-block py-3 mb-3 px-6 bg-none text-xl rounded-lg border
+                                            border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all
+                                            hover:border-transparent hover:scale-110 ease-linear">Add to Cart</a>
+                </div>
+                <div
+                    class="swiper-slide box  items-center flex flex-col py-5 px-8 bg-white shadow text-center ease-linear transition-all">
+                    <img src="/assets/menu/atama_soup.jpeg" alt="" class="h-48 w-48 rounded-full object-cover">
+                    <h3 class="text-2xl pt-5 text-black">Atama Soup</h3>
+                    <div class="price py-2 text-lg text-gray-700">
+                        $2.55/- -7.99/-
+                    </div>
+                    <div class="stars py-2 text-orange-500 text-lg">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="mt-4 text-center inline-block py-3 mb-3 px-6 bg-none text-xl rounded-lg border
+                                            border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all
+                                            hover:border-transparent hover:scale-110 ease-linear">Add to Cart</a>
+                </div>
+                <div
+                    class="swiper-slide box  items-center flex flex-col py-5 px-8 bg-white shadow text-center ease-linear transition-all">
+                    <img src="/assets/menu/beans porridge.webp" alt="" class="h-48 w-48 rounded-full object-cover">
+                    <h3 class="text-2xl pt-5 text-black">Beans Porridge</h3>
+                    <div class="price py-2 text-lg text-gray-700">
+                        $2.55/- -7.99/-
+                    </div>
+                    <div class="stars py-2 text-orange-500 text-lg">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="mt-4 text-center inline-block py-3 mb-3 px-6 bg-none text-xl rounded-lg border
+                                            border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all
+                                            hover:border-transparent hover:scale-110 ease-linear">Add to Cart</a>
+                </div>
+                <div
+                    class="swiper-slide box  items-center flex flex-col py-5 px-8 bg-white shadow text-center ease-linear transition-all">
+                    <img src="/assets/menu/bole.jpg" alt="" class="h-48 w-48 rounded-full object-cover">
+                    <h3 class="text-2xl pt-5 text-black">Bole</h3>
+                    <div class="price py-2 text-lg text-gray-700">
+                        $2.55/- -7.99/-
+                    </div>
+                    <div class="stars py-2 text-orange-500 text-lg">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="mt-4 text-center inline-block py-3 mb-3 px-6 bg-none text-xl rounded-lg border
+                                            border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all
+                                            hover:border-transparent hover:scale-110 ease-linear">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper menu-slider p-4">
+            <div class="swiper-wrapper">
+                <div
+                    class="swiper-slide box  items-center flex flex-col py-5 px-8 bg-white shadow text-center ease-linear transition-all">
+                    <img src=" /assets/menu/edikang ikong.webp" alt="" class="h-48 w-48 rounded-full object-cover">
+                    <h3 class="text-2xl pt-5 text-black">Edikang Ikong</h3>
+                    <div class="price py-2 text-lg text-gray-700">
+                        $2.55/- -7.99/-
+                    </div>
+                    <div class="stars py-2 text-orange-500 text-lg">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="mt-4 text-center inline-block py-3 mb-3 px-6 bg-none text-xl rounded-lg border
+                                            border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all
+                                            hover:border-transparent hover:scale-110 ease-linear">Add to Cart</a>
+                </div>
+                <div
+                    class="swiper-slide box  items-center flex flex-col py-5 px-8 bg-white shadow text-center ease-linear transition-all">
+                    <img src=" /assets/menu/Ekpang-Nkukwo.jpg" alt="" class="h-48 w-48 rounded-full object-cover">
+                    <h3 class="text-2xl pt-5 text-black">Ekpang Nkukwo</h3>
+                    <div class="price py-2 text-lg text-gray-700">
+                        $2.55/- -7.99/-
+                    </div>
+                    <div class="stars py-2 text-orange-500 text-lg">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="mt-4 text-center inline-block py-3 mb-3 px-6 bg-none text-xl rounded-lg border
+                                            border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all
+                                            hover:border-transparent hover:scale-110 ease-linear">Add to Cart</a>
+                </div>
+                <div
+                    class="swiper-slide box  items-center flex flex-col py-5 px-8 bg-white shadow text-center ease-linear transition-all">
+                    <img src=" /assets/menu/Fisherman-Soup.jpg" alt="" class="h-48 w-48 rounded-full object-cover">
+                    <h3 class="text-2xl pt-5 text-black">Fisherman Soup</h3>
+                    <div class="price py-2 text-lg text-gray-700">
+                        $2.55/- -7.99/-
+                    </div>
+                    <div class="stars py-2 text-orange-500 text-lg">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="mt-4 text-center inline-block py-3 mb-3 px-6 bg-none text-xl rounded-lg border
+                                            border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all
+                                            hover:border-transparent hover:scale-110 ease-linear">Add to Cart</a>
+                </div>
+                <div
+                    class="swiper-slide box  items-center flex flex-col py-5 px-8 bg-white shadow text-center ease-linear transition-all">
+                    <img src=" /assets/menu/fried plantain.webp" alt="" class="h-48 w-48 rounded-full object-cover">
+                    <h3 class="text-2xl pt-5 text-black">Fried Plantain</h3>
+                    <div class="price py-2 text-lg text-gray-700">
+                        $2.55/- -7.99/-
+                    </div>
+                    <div class="stars py-2 text-orange-500 text-lg">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#"
+                        class="mt-4 text-center inline-block py-3 mb-3 px-6 bg-none text-xl rounded-lg border border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all hover:border-transparent hover:scale-110 ease-linear">Add
+                        to Cart</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- end of menu section -->
+
+    <!-- categories section starts  -->
+    <section class="categories w-4/5 mx-auto" id="categories">
+        <h1 class="text-center text-3xl py-8 pb-12 text-black">Menu <span
+                class=" polygon bg-orange-500 text-blue-100 inline-block py-2 px-5"> Categories</span></h1>
+
+        <div class="box-container mx-4">
+            <div class="box flex flex-col justify-center items-center py-4 px-8 bg-white shadow text-center">
+                <img src="/assets/category/Fried-rice.jpg" alt="" class="my-4 h-48 w-48 rounded-full object-cover">
+                <h3 class="text-black text-2xl leading-relaxed">Rice</h3>
+                <p class="text-gray-700 leading-relaxed py-4 px-0">upto 45% off</p>
+                <a href="#" class="mt-4 text-center inline-block py-3 mb-3 px-6 bg-white text-xl rounded-lg border border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all
+                                                                hover:border-transparent">Shop Now</a>
+            </div>
+            <div class="box flex flex-col justify-center items-center py-4 px-8 bg-white shadow text-center">
+                <img src="/assets/category/peppered meat.jpg" alt="" class="my-4 h-48 w-48 rounded-full object-cover">
+                <h3 class="text-black text-2xl leading-relaxed">Meat</h3>
+                <p class="text-gray-700 leading-relaxed py-4 px-0">upto 45% off</p>
+                <a href="#" class="mt-4 text-center inline-block py-3 mb-3 px-6 bg-white text-xl rounded-lg border border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all
+                                                                hover:border-transparent">Shop Now</a>
+            </div>
+            <div class="box flex flex-col justify-center items-center py-4 px-8 bg-white shadow text-center">
+                <img src="/assets/category/plantain-porridge-ukang-ukom.png" alt=""
+                    class="my-4 h-48 w-48 rounded-full object-cover">
+                <h3 class="text-black text-2xl leading-relaxed">Porridge</h3>
+                <p class="text-gray-700 leading-relaxed py-4 px-0">upto 45% off</p>
+                <a href="#" class="mt-4 text-center inline-block py-3 mb-3 px-6 bg-white text-xl rounded-lg border border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all
+                                                                hover:border-transparent">Shop Now</a>
+            </div>
+            <div class="box flex flex-col justify-center items-center py-4 px-8 bg-white shadow text-center">
+                <img src="/assets/category/Ogbono-Soup.jpg" alt="" class="my-4 h-48 w-48 rounded-full object-cover">
+                <h3 class="text-black text-2xl leading-relaxed">Soup</h3>
+                <p class="text-gray-700 leading-relaxed py-4 px-0">upto 45% off</p>
+                <a href="#" class="mt-4 text-center inline-block py-3 mb-3 px-6 bg-white text-xl rounded-lg border border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all
+                                                                hover:border-transparent">Shop Now</a>
+            </div>
+            <div class="box flex flex-col justify-center items-center py-4 px-8 bg-white shadow text-center">
+                <img src="/assets/category/chin chin.jpg" alt="" class="my-4 h-48 w-48 rounded-full object-cover">
+                <h3 class="text-black text-2xl leading-relaxed">Snacks</h3>
+                <p class="text-gray-700 leading-relaxed py-4 px-0">upto 45% off</p>
+                <a href="#" class="mt-4 text-center inline-block py-3 mb-3 px-6 bg-white text-xl rounded-lg border border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all
+                                                                hover:border-transparent">Shop Now</a>
+            </div>
+            <div class="box flex flex-col justify-center items-center py-4 px-8 bg-white shadow text-center">
+                <img src="/assets/category/stew.jpg" alt="" class="my-4 h-48 w-48 rounded-full object-cover">
+                <h3 class="text-black text-2xl leading-relaxed">Stew</h3>
+                <p class="text-gray-700 leading-relaxed py-4 px-0">upto 45% off</p>
+                <a href="#"
+                    class="mt-4 text-center inline-block py-3 mb-3 px-6 bg-white text-xl rounded-lg border border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all hover:border-transparent">Shop
+                    Now</a>
+            </div>
+        </div>
+    </section>
+    <!-- end of categories section -->
+
+    <!-- review section starts -->
+    <section class="review w-4/5 mx-auto" id="review">
+        <h1 class="text-center text-3xl py-8 pb-12 text-black">Customer's <span
+                class=" polygon bg-orange-500 text-blue-100 inline-block py-2 px-5"> Review</span></h1>
+
+        <div class="swiper review-slider p-4">
+            <div class="swiper-wrapper">
+
+                <div
+                    class="swiper-slide box items-center flex flex-col py-5 px-8 bg-white shadow text-center ease-linear transition-all">
+                    <img src="/assets/review/ran1.jpg" alt="" class="h-40 w-40 object-cover rounded-full">
+                    <p class="py-4 leading-7 text-gray-700 text-lg">Lorem ipsum dolor sit amet consectetur adipisicin
+                        eum, corrupti possimus voluptate voluptas ex. Cupiditate, magnam veritatis?
+                    </p>
+                    <h3 class="pb-2 text-black text-2xl">Lois Lane</h3>
+                    <div class="text-orange-500 text-xxl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+
+                <div
+                    class="swiper-slide box  items-center flex flex-col py-5 px-8 bg-white shadow text-center ease-linear transition-all">
+                    <img src="/assets/review/ran2.jpg" alt="" class="h-40 w-40 object-cover rounded-full">
+                    <p class="py-4 leading-7 text-gray-700 text-lg">Lorem ipsum dolor sit amet consectetur adipisicin
+                        eum, corrupti possimus voluptate voluptas ex. Cupiditate, magnam veritatis?
+                    </p>
+                    <h3 class="pb-2 text-black text-2xl">Mary River</h3>
+                    <div class="text-orange-500 text-xl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+
+                <div
+                    class="swiper-slide box  items-center flex flex-col py-5 px-8 bg-white shadow text-center ease-linear transition-all">
+                    <img src="/assets/review/ran3.jpg" alt="" class="h-40 w-40 object-cover rounded-full">
+                    <p class="py-4 leading-7 text-gray-700 text-lg">Lorem ipsum dolor sit amet consectetur adipisicin
+                        eum, corrupti possimus voluptate voluptas ex. Cupiditate, magnam veritatis?
+                    </p>
+                    <h3 class="pb-2 text-black text-2xl">Eddy Run</h3>
+                    <div class="text-orange-500 text-xl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+
+                <div
+                    class="swiper-slide box  items-center flex flex-col py-5 px-8 bg-white shadow text-center ease-linear transition-all">
+                    <img src="/assets/review/ran4.jpg" alt="" class="h-40 w-40 object-cover rounded-full">
+                    <p class=" py-4 leading-7 text-gray-700 text-lg">Lorem ipsum dolor sit amet consectetur
+                        adipisicin eum, corrupti possimus voluptate voluptas ex. Cupiditate, magnam veritatis?
+                    </p>
+                    <h3 class="pb-2 text-black text-2xl">Peter Fall</h3>
+                    <div class="text-orange-500 text-xl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- review section ends -->
+
+    <!-- blogs section starts -->
+    <section class="blogs bg-gray-300 py-5" id="blogs">
+        <div class="blogs w-4/5 mx-auto">
+            <h1 class="text-center text-3xl py-8 pb-12 text-black">Our <span
+                    class="polygon bg-orange-500 text-blue-100 inline-block py-2 px-5"> Blogs</span></h1>
+            <div class="blog-box-container mx-">
+                <div class="box bg-white py-4 overflow-hidden rounded-lg shadow">
+                    <img src="/assets/blog/Nigeria-Jollof-rice.jpg" alt=""
+                        class="h-40 w-40 object-cover rounded-full block mx-auto">
+                    <div class="content p-4">
+                        <div class="icons flex items-center justify-between p-6 mb-4 border-b-4">
+                            <a href="#" class="text-gray-700 text-lg"><i class="fas fa-user text-orange-500 pr-2"></i>
+                                By
+                                User
+                            </a>
+                            <a href="#" class="text-gray-700 text-lg"><i
+                                    class="fas fa-calendar-alt text-orange-500 pr-2"></i>
+                                1st July, 2022
+                            </a>
+                        </div>
+                        <h3 class="text-black text-center text-3xl py-3 leading-7 ">Freshly Prepared</h3>
+                        <p class="text-lg text-gray-700 text-center leading-7 py-2">Lorem ipsum dolor sit, amet
+                            consectetur
+                            adipisicing
+                            elit. Et, nostrum deleniti.</p>
+                        <div class="m-auto w-fit">
+                            <a href=" #"
+                                class="mt-4 text-center inline-block py-3 mb-3 px-6 bg-none text-xl rounded-lg border border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all hover:border-transparent">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box bg-white py-4 overflow-hidden rounded-lg shadow">
+                    <img src="/assets/blog/yam porridge.webp" alt=""
+                        class="h-40 w-40 object-cover rounded-full block mx-auto">
+                    <div class="content p-4">
+                        <div class="icons flex items-center justify-between p-6 mb-4 border-b-4">
+                            <a href="#" class="text-gray-700 text-lg"> <i class="fas fa-user text-orange-500 pr-2"></i>
+                                By User
+                            </a>
+                            <a href="#" class="text-gray-700 text-lg"><i
+                                    class="fas fa-calendar-alt text-orange-500 pr-2"></i>
+                                </i>
+                                1st July, 2022
+                            </a>
+                        </div>
+                        <h3 class="text-black text-center text-3xl py-3 leading-7 ">Freshly Prepared</h3>
+                        <p class="text-lg text-gray-700 text-center leading-7 py-2">Lorem ipsum dolor sit, amet
+                            consectetur
+                            adipisicing
+                            elit. Et, nostrum deleniti.</p>
+                        <div class="m-auto w-fit">
+                            <a href=" #"
+                                class="mt-4 text-center inline-block py-3 mb-3 px-6 bg-none text-xl rounded-lg border border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all hover:border-transparent">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box bg-white py-4 overflow-hidden rounded-lg shadow">
+                    <img src="/assets/blog/rice stew.jpg" alt=""
+                        class="h-40 w-40 object-cover rounded-full block mx-auto">
+                    <div class="content p-4">
+                        <div class="icons flex items-center justify-between p-6 mb-4 border-b-4">
+                            <a href="#" class="text-gray-700 text-lg"><i class="fas fa-user text-orange-500 pr-2"></i>
+                                By User
+                            </a>
+                            <a href="#" class="text-gray-700 text-lg"><i
+                                    class="fas fa-calendar-alt text-orange-500 pr-2"></i>
+                                1st July, 2022
+                            </a>
+                        </div>
+                        <h3 class="text-black text-center text-3xl py-3 leading-7 ">Freshly Prepared</h3>
+                        <p class="text-lg text-gray-700 text-center leading-7 py-2">Lorem ipsum dolor sit, amet
+                            consectetur
+                            adipisicing
+                            elit. Et, nostrum deleniti.</p>
+                        <div class="m-auto w-fit">
+                            <a href=" #"
+                                class="mt-4 text-center inline-block py-3 mb-3 px-6 bg-none text-xl rounded-lg border border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all hover:border-transparent">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- end of blogs section -->
+
+    <!-- footer section starts -->
+    <section class="footer bg-white py-8">
+        <div class="footer-box-container mx-4">
+            <div class=" text-center block text-gray-700 py-4ox">
+                <div class="flex gap-5 items-center justify-center">
+                    <h3 class="text-orange-500 text-3xl py-4">Meal</h3>
+                    <!-- <img src=" /assets/cutlery.png" class=" h-16 w-16 object-fill" alt="" srcset=""> -->
+                </div>
+                <p class="leading-7 text-lg text-gray-700 py-4">Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Perspiciatis, magni molestiae!</p>
+                <div class="share flex justify-center">
+                    <a href=""
+                        class="fab fa-facebook-f block text-lg text-black ml-2 bg-gray-300 text-center py-4 h-12 w-12 leading-5 rounded-lg hover:bg-orange-500 hover:text-white transition-all ease-linear"></a>
+                    <a href=""
+                        class="fab fa-twitter block text-lg text-black ml-2 bg-gray-300 text-center py-4 h-12 w-12 leading-5 rounded-lg hover:bg-orange-500 hover:text-white transition-all ease-linear"></a>
+                    <a href=""
+                        class="fab fa-instagram block text-lg text-black ml-2 bg-gray-300 text-center py-4 h-12 w-12 leading-5 rounded-lg hover:bg-orange-500 hover:text-white transition-all ease-linear"></a>
+                    <a href=""
+                        class="fab fa-linkedin block text-lg text-black ml-2 bg-gray-300 text-center py-4 h-12 w-12 leading-5 rounded-lg hover:bg-orange-500 hover:text-white transition-all ease-linear"></a>
+                </div>
+            </div>
+            <div class="box mx-auto">
+                <h3 class=" text-2xl text-center py-4">Contact Info</h3>
+                <a href="" class="links block text-lg text-gray-700 py-4"><i
+                        class="fas fa-phone text-orange-500 pr-2 hover:pr-4 transition-all ease-linear"></i>+2345886868690</a>
+                <a href="" class="links block text-lg text-gray-700 py-4"><i
+                        class="fas fa-phone text-orange-500 pr-2 hover:pr-4 transition-all ease-linear"></i>+2345321829029</a>
+                <a href="" class="links block text-lg text-gray-700 py-4"><i
+                        class="fas fa-envelope text-orange-500 pr-2 hover:pr-4 transition-all ease-linear"></i>meal@gmail.com</a>
+                <a href="" class="links block text-lg text-gray-700 py-4"><i
+                        class="fas fa-map-marker-alt text-orange-500 pr-2 hover:pr-4 transition-all ease-linear"></i>Lagos,
+                    Nigeria</a>
+            </div>
+
+            <div class="box mx-auto">
+                <h3 class="text-2xl py-4">Quick Links</h3>
+                <a href="" class="links block text-lg text-gray-700 py-4"><i
+                        class="fas fa-arrow-right text-orange-500 pr-2 hover:pr-4 transition-all ease-linear"></i>Home</a>
+                <a href="" class="links block text-lg text-gray-700 py-4"><i
+                        class="fas fa-arrow-right text-orange-500 pr-2 hover:pr-4 transition-all ease-linear"></i>Features</a>
+                <a href="" class="links block text-lg text-gray-700 py-4"><i
+                        class="fas fa-arrow-right text-orange-500 pr-2 hover:pr-4 transition-all ease-linear"></i>Menu</a>
+                <a href="" class="links block text-lg text-gray-700 py-4"><i
+                        class="fas fa-arrow-right text-orange-500 pr-2 hover:pr-4 transition-all ease-linear"></i>Categories</a>
+                <a href="" class="links block text-lg text-gray-700 py-4"><i
+                        class="fas fa-arrow-right text-orange-500 pr-2 hover:pr-4 transition-all ease-linear"></i>Review</a>
+                <a href="" class="links block text-lg text-gray-700 py-4"><i
+                        class="fas fa-arrow-right text-orange-500 pr-2 hover:pr-4 transition-all ease-linear"></i>Blogs</a>
+            </div>
+
+            <div class="box flex flex-col items-center justify-center">
+                <h3 class="text-2xl py-4">Newsletter</h3>
+                <p class="leading-7 text-lg text-gray-700 py-4">Subscribe For Latest Updates</p>
+                <input type="email" placeholder="Your Email"
+                    class="email my-1 p-2 rounded-lg bg-gray-300 text-lg text-black normal-case">
+                <input type="submit" value="Subscribe"
+                    class="mt-4 text-center block py-3 mb-3 px-6 bg-none text-lg rounded-lg border border-black text-black cursor-pointer hover:bg-orange-500 hover:text-blue-100 hover:transition-all hover:border-transparent">
+                <img src="/assets/credit-card-icon-20.jpg" alt="" class="mt-8 h-40 w-72 object-cover">
+            </div>
+        </div>
+    </section>
+    <!-- end of footer section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src=" main.js">
+
+    </script>
+</body>
+
+</html>
