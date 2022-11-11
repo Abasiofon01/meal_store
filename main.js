@@ -1,11 +1,10 @@
+
 const button = document.querySelector('#menu-button');
 const menu = document.querySelector('#menu');
-
 
 button.addEventListener('click', () => {
     menu.classList.toggle('hidden');
 });
-
 
 let searchForm = document.querySelector('.search-form');
 document.querySelector('#search-btn').onclick = () => {
