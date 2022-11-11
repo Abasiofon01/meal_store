@@ -13,69 +13,65 @@
 
 </head>
 
-<body class="bg-gray-100">
-
+<body>
     <!-- home section starts -->
-
     <section class="home h-screen" id="home">
-        <header class=" header flex items-center text-lg
-           justify-between p-5" id="header">
-            <div class="">
-                <a href="#">
-                    <h3 class="text-orange-500 text-2xl hover:scale-110 mb-5">Meal<span
-                            class="text-white text-3xl hover:scale-110">.</span></h3>
-                </a>
-                <!-- <img src=" /assets/logoo.png" class=" h-12 w-full object-fill hidden md:block" alt="" srcset=""> -->
-            </div>
-
-            <nav class="
+        <nav class="
           flex flex-wrap
           items-center
-          md:py-0
+          justify-between
+          py-5
+          px-6
         " id="nav">
 
-                <svg xmlns="http://www.w3.org/2000/svg" id="menu-button"
-                    class="h-6 w-6 text-white cursor-pointer md:hidden block" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
+            <a href="#" class="text-orange-500 text-2xl hover:scale-110">
+                Meal<span class="text-white">.</span>
+            </a>
 
-                <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
-                    <ul class="
+            <svg xmlns="http://www.w3.org/2000/svg" id="menu-button"
+                class="h-6 w-6 text-white cursor-pointer md:hidden block" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+
+            <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+                <ul class="
               pt-4
               uppercase text-base text-white
               text-center
+              
               md:flex
               md:justify-between 
               md:pt-0">
-                        <li>
-                            <a class="md:p-4 py-2 block hover:text-orange-500 hover:scale-110 transition-all"
-                                href="#home">Home</a>
-                        </li>
-                        <li>
-                            <a class="md:p-4 py-2 block hover:text-orange-500 hover:scale-110 transition-all"
-                                href="#features">Features</a>
-                        </li>
-                        <li>
-                            <a class="md:p-4 py-2 block hover:text-orange-500 hover:scale-110 transition-all"
-                                href="#menu_section">Menu</a>
-                        </li>
-                        <li>
-                            <a class="md:p-4 py-2 block hover:text-orange-500 hover:scale-110 transition-all"
-                                href="#categories">Categories</a>
-                        </li>
-                        <li>
-                            <a class="md:p-4 py-2 block hover:text-orange-500 hover:scale-110 transition-all"
-                                href="#review">Review</a>
-                        </li>
-                        <li>
-                            <a class="md:p-4 py-2 block hover:text-orange-500 hover:scale-110 transition-all"
-                                href="#blogs">Blogs</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="text-white  md:flex md:gap-5">
+                    <li>
+                        <a class="md:p-4 py-2 block hover:text-orange-500 hover:scale-110 transition-all"
+                            href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a class="md:p-4 py-2 block hover:text-orange-500 hover:scale-110 transition-all"
+                            href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a class="md:p-4 py-2 block hover:text-orange-500 hover:scale-110 transition-all"
+                            href="#menu_section">Menu</a>
+                    </li>
+                    <li>
+                        <a class="md:p-4 py-2 block hover:text-orange-500 hover:scale-110 transition-all"
+                            href="#categories">Categories</a>
+                    </li>
+                    <li>
+                        <a class="md:p-4 py-2 block hover:text-orange-500 hover:scale-110 transition-all"
+                            href="#review">Review</a>
+                    </li>
+                    <li>
+                        <a class="md:p-4 py-2 block hover:text-orange-500 hover:scale-110 transition-all"
+                            href="#blogs">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="text-white hidden  md:flex md:gap-5">
                 <i class="fa-solid fa-magnifying-glass hover:text-orange-500 hover:scale-110 transition-all"
                     id="search-btn"></i>
                 <i class="fa-solid fa-cart-shopping hover:text-orange-500 hover:scale-110 transition-all"
@@ -155,13 +151,14 @@
                         class="btn mt-4 text-center inline-block py-3 mb-3 px-6 bg-none text-xl rounded-lg border border-black text-black cursor-pointer hover:bg-orange-500 hover:text-white hover:transition-all hover:border-transparent">
                 </div>
             </form>
-        </header>
-
+        </nav>
         <div class="content flex flex-col items-center justify-center h-5/6 m-auto text-center w-7/12">
-            <h3 class="text-blue-100 text-3xl font-bold">Fresh and <span class="text-orange-500"> Organic </span> Meals
+            <h3 class="text-blue-100 text-3xl font-bold">Fresh and <span class="text-orange-500"> Organic </span>
+                Meals
                 For
                 You</h3>
-            <p class="text-blue-100 text-xl leading-relaxed pt-4">Lorem, ipsum dolor sit amet consectetur adipisicing
+            <p class="text-blue-100 text-xl leading-relaxed pt-4">Lorem, ipsum dolor sit amet consectetur
+                adipisicing
                 elit.
                 Ratione,
                 perspiciatis.
@@ -172,7 +169,6 @@
                 hover:border-transparent hover:scale-110 ease-linear">Shop Now</a>
         </div>
     </section>
-
     <!-- end of home section -->
 
     <!-- features section starts -->
@@ -186,7 +182,8 @@
                 hover:delay-200  hover:transition-all">
                 <img src="/assets/Goat-Meat-Pepper-Soup.jpg" alt="" class="h-48 w-48 rounded-full object-cover my-4">
                 <h3 class="text-black text-2xl leading-relaxed">Fresh and Organic</h3>
-                <p class="text-orange-500 leading-relaxed py-2 px-0">Lorem ipsum dolor sit amet, consectetur adipisicing
+                <p class="text-orange-500 leading-relaxed py-2 px-0">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing
                     elit.
                     Praesentium libero
                     illum quo aliquid sit?
@@ -199,7 +196,8 @@
                 class="box flex flex-col items-center py-5 px-8 bg-white shadow text-center hover:scale-105 hover:ease-in hover:delay-200 hover:transition-all">
                 <img src="/assets/dlevery bike.jpg" alt="" class="h-48 w-48 rounded-full object-cover my-4">
                 <h3 class="text-black text-2xl leading-relaxed">Free Delivery</h3>
-                <p class="text-orange-500 leading-relaxed py-2 px-0">Lorem ipsum dolor sit amet, consectetur adipisicing
+                <p class="text-orange-500 leading-relaxed py-2 px-0">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing
                     elit.
                     Praesentium libero
                     illum quo aliquid
@@ -213,7 +211,8 @@
                 class="box flex flex-col items-center py-5 px-8 bg-white shadow text-center hover:scale-105 hover:ease-in hover:delay-200 hover:transition-all">
                 <img src="/assets/fast payment.png" alt="" class="h-48 w-48 rounded-full object-cover my-4">
                 <h3 class="text-black text-2xl leading-relaxed">Easy Payments</h3>
-                <p class="text-orange-500 leading-relaxed py-2 px-0">Lorem ipsum dolor sit amet, consectetur adipisicing
+                <p class="text-orange-500 leading-relaxed py-2 px-0">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing
                     elit.
                     Praesentium libero
                     illum quo aliquid sit?
@@ -385,8 +384,6 @@
         </div>
         </div>
     </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- end of menu section -->
 
     <!-- categories section starts  -->
@@ -671,35 +668,8 @@
     </section>
     <!-- end of footer section -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src=" main.js">
-
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src=" main.js"></script>
 </body>
 
 </html>
