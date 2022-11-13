@@ -37,7 +37,7 @@ window.onscroll = () => {
 
 var swiper = new Swiper(".menu-slider", {
     loop: true,
-    spaceBetween: 20,
+    spaceBetween: 15,
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
@@ -58,7 +58,7 @@ var swiper = new Swiper(".menu-slider", {
 
 var swiper = new Swiper(".review-slider", {
     loop: true,
-    spaceBetween: 20,
+    spaceBetween: 15,
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
